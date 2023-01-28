@@ -93,8 +93,7 @@ public class CharacterCameraConstraint : MonoBehaviour
 		float clippingOverlap = 0.0f;
 		if (CheckCameraOverlapped())
 		{
-			// Note: GEOGANIAS COMMENTED THAT OUT
-			//OVRScreenFade.instance.SetExplicitFade(FADE_AMOUNT_MAXIMUM);
+			OVRScreenFade.instance.SetExplicitFade(FADE_AMOUNT_MAXIMUM);
 		}
 		else if (CheckCameraNearClipping(out clippingOverlap))
 		{
@@ -104,13 +103,11 @@ public class CharacterCameraConstraint : MonoBehaviour
 			// Note: Both math helper functions clamp `t` to within [0.0, 1.0].
 			float fadeParameter = Mathf.InverseLerp(0.0f, FADE_OVERLAP_MAXIMUM, clippingOverlap);
 			float fadeAlpha = Mathf.Lerp(0.0f, FADE_AMOUNT_MAXIMUM, fadeParameter);
-			// Note: GEOGANIAS COMMENTED THAT OUT
-			//OVRScreenFade.instance.SetExplicitFade(fadeAlpha);
+			OVRScreenFade.instance.SetExplicitFade(fadeAlpha);
 		}
 		else
 		{
-			// Note: GEOGANIAS COMMENTED THAT OUT
-			//OVRScreenFade.instance.SetExplicitFade(0.0f);
+			OVRScreenFade.instance.SetExplicitFade(0.0f);
 		}
 
 		// Offset the camera into the capsule that's used so that it doesn't scrape any
