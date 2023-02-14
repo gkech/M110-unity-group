@@ -1,0 +1,11 @@
+Model Information:
+* title:	Arch
+* source:	https://sketchfab.com/3d-models/arch-743422dda7db46a081dcd48ae503da6c
+* author:	Sylzebub (https://sketchfab.com/Sylzebub)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Arch" (https://sketchfab.com/3d-models/arch-743422dda7db46a081dcd48ae503da6c) by Sylzebub (https://sketchfab.com/Sylzebub) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
