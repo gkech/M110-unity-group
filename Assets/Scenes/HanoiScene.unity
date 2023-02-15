@@ -4662,7 +4662,7 @@ PrefabInstance:
     - target: {fileID: 6914888516354152392, guid: ca44c14f21d1a0c4fbcb63567ed6f199,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.572
+      value: -35.633
       objectReference: {fileID: 0}
     - target: {fileID: 6914888516354152392, guid: ca44c14f21d1a0c4fbcb63567ed6f199,
         type: 3}
@@ -4672,7 +4672,7 @@ PrefabInstance:
     - target: {fileID: 6914888516354152392, guid: ca44c14f21d1a0c4fbcb63567ed6f199,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.351
+      value: 16.183
       objectReference: {fileID: 0}
     - target: {fileID: 6914888516354152392, guid: ca44c14f21d1a0c4fbcb63567ed6f199,
         type: 3}
@@ -6297,7 +6297,7 @@ GameObject:
   - component: {fileID: 1612443068}
   - component: {fileID: 1612443067}
   - component: {fileID: 1612443066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DiscSmall
   m_TagString: Disc
   m_Icon: {fileID: 0}
@@ -6781,7 +6781,8 @@ GameObject:
   - component: {fileID: 1911512898}
   - component: {fileID: 1911512897}
   - component: {fileID: 1911512896}
-  m_Layer: 0
+  - component: {fileID: 1911512903}
+  m_Layer: 10
   m_Name: DiscBig
   m_TagString: Disc
   m_Icon: {fileID: 0}
@@ -6925,6 +6926,19 @@ Transform:
   m_Father: {fileID: 164308623}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911512903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911512895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2604f410c7db215438fad88946b01d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousSnapZone: {fileID: 1926100599}
 --- !u!1 &1926100599
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,7 +7237,7 @@ GameObject:
   - component: {fileID: 1967948166}
   - component: {fileID: 1967948165}
   - component: {fileID: 1967948164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DiscMedium
   m_TagString: Disc
   m_Icon: {fileID: 0}
