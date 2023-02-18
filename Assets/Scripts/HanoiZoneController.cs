@@ -12,75 +12,74 @@ public class HanoiZoneController : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Disc") 
         {
-            if (discCanBePlaced(other.gameObject)) {
-                discAttached = other.gameObject;
-
-                // Set the disc to return to this zone if not snapped elsewhere
-                discAttached.GetComponent<SnapInteractor>()
-                    .InjectOptionalTimeOutInteractable(this.gameObject.GetComponent<SnapInteractable>());
-
-                if (zoneAbove != null)
-                    zoneAbove.SetActive(true);
-
-                if (zoneBellow != null)
-                    zoneBellow.SetActive(false);
+            if(discAttached == null && bellowZoneCheck(other.gameObject))
+            {
+                this.gameObject.SetActive(false);
+                this.gameObject.SetActive(true);
             }
 
-
-            /*if(discAttached == null) 
+            else
             {
-                discAttached = other.gameObject;
-                if (zoneBellow != null && 
-                    discAttached.layer > zoneBellow.GetComponent<HanoiZoneController>().discAttached.layer)
+                if (discAttached == null) 
                 {
-                    Debug.Log("EEEEEEE");
-                    this.gameObject.SetActive(false);
-                    return;
+                    placeDiscIntoZone(other.gameObject);
                 }
-
-                if (zoneAbove != null)
-                    zoneAbove.SetActive(true);
-
-                if (zoneBellow != null)
-                    zoneBellow.SetActive(false);
-
-                // Set the disc to return to this zone if not snapped elsewhere
-                discAttached.GetComponent<SnapInteractor>()
-                    .InjectOptionalTimeOutInteractable(this.gameObject.GetComponent<SnapInteractable>());
-
-                discAttached.GetComponent<PreviousZone>().previousSnapZone 
-                = this.gameObject.transform;
-            }*/
-        }
-    }
-
-        private void OnTriggerExit(Collider other) {
-        if(other.gameObject.tag == "Disc") {
-            if (zoneAbove != null)
-                zoneAbove.SetActive(false);
-
-            if (zoneBellow != null)
-                zoneBellow.SetActive(true);
-
-            discAttached = null;
-        }
-    }
-
-    /* 
-     * A disc can be placed if there is no zone bellow or if the disc on the zone bellow 
-     * is bigger than the current disc
-     */
-    private bool discCanBePlaced(GameObject disc) 
-    {
-        if (discAttached == null) 
-        {
-            if (zoneBellow != null && 
-            disc.layer > zoneBellow.GetComponent<HanoiZoneController>().discAttached.layer)
-            {
-                return false;
             }
-            return true;
         }
-        return false;
+    }
+
+    private void OnTriggerExit(Collider other) 
+    {
+        if(other.gameObject.tag == "Disc" && other.gameObject == discAttached) 
+        {
+            removeDiscFromZone();
+        }
+    }
+
+    // Returns false if the zone bellow, has a disc who is bigger than the current one or there is no zone bellow
+    private bool bellowZoneCheck(GameObject disc) 
+    {
+        return (zoneBellow != null && 
+            disc.layer > zoneBellow.GetComponent<HanoiZoneController>().discAttached.layer);
+    }
+
+    private void placeDiscIntoZone(GameObject disc)
+    {
+        discAttached = disc;
+
+        // Set the disc to return to this zone if not snapped elsewhere
+        discAttached.GetComponent<SnapInteractor>()
+            .InjectOptionalTimeOutInteractable(this.gameObject.GetComponent<SnapInteractable>());
+
+        // Activate the zone above
+        if (zoneAbove != null)
+                zoneAbove.SetActive(true);
+
+        // Do not allow the zone bellow disc to be grabbed
+        if (zoneBellow != null) {
+            zoneBellow
+            .GetComponent<HanoiZoneController>()
+            .discAttached
+            .GetComponent<HanoiDiscController>()
+            .hasDiscAbove = true;
+        }
+    }
+
+    private void removeDiscFromZone() 
+    {
+        // Deactivate the zone above
+        if (zoneAbove != null) 
+            zoneAbove.SetActive(false);
+
+        // Enable the disc in the zone bellow to be grabbed
+        if (zoneBellow != null) 
+        {
+            zoneBellow
+                .GetComponent<HanoiZoneController>()
+                .discAttached
+                .GetComponent<HanoiDiscController>()
+                .hasDiscAbove = false;
+        }
+        discAttached = null;
     }
 }

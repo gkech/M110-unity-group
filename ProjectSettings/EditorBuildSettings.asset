@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HanoiScene.unity
+    guid: bfd2760635d19f4469605b8acf1f2def
+  - enabled: 0
+    path: Assets/vrcs.unity
+    guid: a4a861cfe87f37149a27dda2fdc0828b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

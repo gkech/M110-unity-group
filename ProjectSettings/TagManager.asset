@@ -8,6 +8,7 @@ TagManager:
   - MiddleZone
   - TopZone
   - Disc
+  - NotAvailable
   layers:
   - Default
   - TransparentFX

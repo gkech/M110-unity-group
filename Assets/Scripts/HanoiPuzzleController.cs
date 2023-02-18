@@ -5,18 +5,29 @@ using Oculus.Interaction;
 
 public class HanoiPuzzleController : MonoBehaviour
 {
-    public List<GameObject> discs;
+    public GameObject bottomZone;
+    public GameObject middleZone;
+    public GameObject topZone;
 
+    private GameObject bottomZoneDiscAttached;
+    private GameObject middleZoneDiscAttached;
+    private GameObject topZoneDiscAttached;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log( discs[0].GetComponent<SnapInteractor>());
-    }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {   
+        bottomZoneDiscAttached = bottomZone.GetComponent<HanoiZoneController>().discAttached;
+        middleZoneDiscAttached = middleZone.GetComponent<HanoiZoneController>().discAttached;
+        topZoneDiscAttached = topZone.GetComponent<HanoiZoneController>().discAttached;
+
+        if (bottomZoneDiscAttached != null &&
+            middleZoneDiscAttached != null &&
+            topZoneDiscAttached != null &&
+            bottomZoneDiscAttached.name == "DiscBig" && 
+            middleZoneDiscAttached.name == "DiscMedium" && 
+            topZoneDiscAttached.name == "DiscSmall"
+        )
+            Debug.Log("WIN");
     }
 }
