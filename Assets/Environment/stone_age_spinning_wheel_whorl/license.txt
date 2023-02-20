@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone age spinning wheel whorl
+* source:	https://sketchfab.com/3d-models/stone-age-spinning-wheel-whorl-cc66f928ccad49e2a5412e85ae8114fc
+* author:	OpenScan (https://sketchfab.com/openscan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone age spinning wheel whorl" (https://sketchfab.com/3d-models/stone-age-spinning-wheel-whorl-cc66f928ccad49e2a5412e85ae8114fc) by OpenScan (https://sketchfab.com/openscan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
