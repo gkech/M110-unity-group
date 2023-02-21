@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: 28ab4035d0d0fb0499ec241fbfa9b524
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Environment\box_of_secrets\scene.bin
+    assetPath: Assets\Environment\box_of_secrets\scene.bin
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Main_Box_Sides_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Main_Box_Sides_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Main_Box_Sides_normal.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Main_Box_Sides_normal.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Glow2_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Glow2_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Dark_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Dark_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_Dark_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_Dark_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_Dark_emissive.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_Dark_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Main_Box_TopBottom_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Main_Box_TopBottom_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Main_Box_TopBottom_normal.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Main_Box_TopBottom_normal.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_emissive.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Keyhole_Glow_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Gold_Rivet_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Gold_Rivet_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Symbols_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Symbols_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\box_of_secrets\textures\Simple_Gray_baseColor.png
+    assetPath: Assets\Environment\box_of_secrets\textures\Simple_Gray_baseColor.png
+  reportItems:
+  - type: 2
+    code: 20
+    messages:
+    - KHR_materials_specular
+  - type: 2
+    code: 20
+    messages:
+    - KHR_materials_emissive_strength

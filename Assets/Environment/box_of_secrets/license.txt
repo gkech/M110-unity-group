@@ -1,0 +1,11 @@
+Model Information:
+* title:	Box Of Secrets
+* source:	https://sketchfab.com/3d-models/box-of-secrets-c12a5fcd11b7457c820fbd3b441ae8f5
+* author:	nickheitzman (https://sketchfab.com/nickheitzman)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Box Of Secrets" (https://sketchfab.com/3d-models/box-of-secrets-c12a5fcd11b7457c820fbd3b441ae8f5) by nickheitzman (https://sketchfab.com/nickheitzman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
