@@ -20,7 +20,7 @@ public class HanoiZoneController : MonoBehaviour
 
             else
             {
-                if (discAttached == null) 
+                if (discAttached == null && (zoneBellow == null || zoneBellow.GetComponent<HanoiZoneController>().discAttached != null))
                 {
                     placeDiscIntoZone(other.gameObject);
                 }
@@ -51,9 +51,6 @@ public class HanoiZoneController : MonoBehaviour
         discAttached.GetComponent<SnapInteractor>()
             .InjectOptionalTimeOutInteractable(this.gameObject.GetComponent<SnapInteractable>());
 
-        // Activate the zone above
-        if (zoneAbove != null)
-                zoneAbove.SetActive(true);
 
         // Do not allow the zone bellow disc to be grabbed
         if (zoneBellow != null) {
@@ -63,6 +60,10 @@ public class HanoiZoneController : MonoBehaviour
             .GetComponent<HanoiDiscController>()
             .hasDiscAbove = true;
         }
+
+        // Activate the zone above
+        if (zoneAbove != null && discAttached == disc)
+                zoneAbove.SetActive(true);
     }
 
     private void removeDiscFromZone() 
