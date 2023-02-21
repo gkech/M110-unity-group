@@ -1,0 +1,11 @@
+Model Information:
+* title:	Key
+* source:	https://sketchfab.com/3d-models/key-dccd0d629d704cc2bde905572b0947da
+* author:	caior (https://sketchfab.com/caior)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Key" (https://sketchfab.com/3d-models/key-dccd0d629d704cc2bde905572b0947da) by caior (https://sketchfab.com/caior) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
