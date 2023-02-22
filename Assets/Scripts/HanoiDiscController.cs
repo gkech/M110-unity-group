@@ -23,9 +23,6 @@ public class HanoiDiscController : MonoBehaviour
        } else {
         this.gameObject.GetComponent<Collider>().enabled = true;     
        }
-       if(this.gameObject.GetComponent<OVRGrabbable>().isGrabbed) {
-        Debug.Log("GRABBBB");
-       }
     }
 
     void LateUpdate() {
