@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction;
+using UnityEngine.Events;
 
 public class HanoiZoneController : MonoBehaviour
 {
     public GameObject zoneBellow;
     public GameObject zoneAbove;
     public GameObject discAttached;
+
+    public UnityEvent interactAction;
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Disc") 
@@ -25,11 +28,16 @@ public class HanoiZoneController : MonoBehaviour
                     placeDiscIntoZone(other.gameObject);
                 }
             }
+
+            if(discAttached == null && bellowZoneCheck(other.gameObject)) {
+                interactAction.Invoke();
+            }
         }
     }
 
     private void OnTriggerExit(Collider other) 
     {
+        Debug.Log(other.gameObject.tag);
         if(other.gameObject.tag == "Disc" && other.gameObject == discAttached) 
         {
             removeDiscFromZone();
