@@ -55,6 +55,8 @@ public class HanoiZoneController : MonoBehaviour
     {
         discAttached = disc;
 
+        //discAttached.GetComponent<AudioSource>().Play();
+
         // Set the disc to return to this zone if not snapped elsewhere
         discAttached.GetComponent<SnapInteractor>()
             .InjectOptionalTimeOutInteractable(this.gameObject.GetComponent<SnapInteractable>());
