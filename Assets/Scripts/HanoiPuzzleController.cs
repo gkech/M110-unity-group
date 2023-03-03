@@ -13,14 +13,24 @@ public class HanoiPuzzleController : MonoBehaviour
 
     public GameObject zones;
 
+    public bool hasWon = false;
+
     private bool hasPlayed = false;
 
     private GameObject bottomZoneDiscAttached;
     private GameObject middleZoneDiscAttached;
     private GameObject topZoneDiscAttached;
 
+    public GameObject EmissObj1;
+    public GameObject EmissObj2;
 
-    // Update is called once per frame
+
+
+    void Start()
+    {
+        EmissObj1.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+        EmissObj2.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+    }
     void Update()
     {   
         bottomZoneDiscAttached = bottomZone.GetComponent<HanoiZoneController>().discAttached;
@@ -39,13 +49,17 @@ public class HanoiPuzzleController : MonoBehaviour
         if( bottomZoneDiscAttached != null && bottomZoneDiscAttached.name == "DiscSmall" )
         {
             Debug.Log("WIN");
+           
             
             if(  !hasPlayed )
             {   
+                hasWon = true;
                 zones.SetActive(!zones.activeSelf);
                 key.SetActive(!key.activeSelf);
                 smoke.Play();
                 hasPlayed = true;
+                EmissObj1.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+                EmissObj2.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
             }
             
 

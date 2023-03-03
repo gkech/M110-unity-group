@@ -21,7 +21,7 @@ public class KeyZoneController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name == "key") 
+        if(other.gameObject.name == "Orb") 
         {
             portalGlow.SetActive(true);
             //portalAnimator.Play();

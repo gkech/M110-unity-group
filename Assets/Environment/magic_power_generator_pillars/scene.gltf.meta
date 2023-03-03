@@ -1,0 +1,93 @@
+fileFormatVersion: 2
+guid: 743bc0a5047820443a10b6e788df53c3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Environment\magic_power_generator_pillars\scene.bin
+    assetPath: Assets\Environment\magic_power_generator_pillars\scene.bin
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerRay_v2_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerRay_v2_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerRay_v2_emissive.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerRay_v2_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_metallicRoughness.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_emissive.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_normal.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerControlTower_normal.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_metallicRoughness.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_emissive.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_normal.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor_normal.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor.Idle_metallicRoughness.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\PowerConductor.Idle_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_metallicRoughness.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_normal.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Idle_normal.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_emissive.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_emissive.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_transmission.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.Idle_transmission.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.001_baseColor.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.001_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.001_emissive.png
+    assetPath: Assets\Environment\magic_power_generator_pillars\textures\MagicOrb.Crystal.001_emissive.png
+  reportItems:
+  - type: 2
+    code: 30
+    messages: []
+  - type: 2
+    code: 30
+    messages: []
