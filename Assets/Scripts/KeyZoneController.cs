@@ -1,13 +1,15 @@
     using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyZoneController : MonoBehaviour
 {
 
-    public Animator portalAnimator;
-
     public GameObject portalGlow;
+    bool hasPlayed = false;
+
+    public GameObject flashLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +22,21 @@ public class KeyZoneController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name == "Orb") 
-        {
-            portalGlow.SetActive(true);
-            //portalAnimator.Play();
-        }
+    public void EnablePortal() {
+            StartCoroutine(ExampleCoroutine());
+            hasPlayed=true;
+    }
+
+     IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+
+        portalGlow.SetActive(true);
+        flashLight.SetActive(true);
+
+        yield return new WaitForSeconds(4);
+
+        SceneManager.LoadScene("FutureScene");
+    
     }
 }

@@ -9,7 +9,6 @@ public class PortalController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("MPHKA");
         interactAction.Invoke();
     }
 }

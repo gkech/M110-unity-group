@@ -26,10 +26,16 @@ public class PowerGeneratorGlow : MonoBehaviour
 
     void Update()
     {
+        if( isPlayerInRange) {
+            Debug.Log("Player in range");
+        }
+
+                if( hanoiGoalStack.hasWon) {
+            Debug.Log("win stack");
+        }
         
         if( isPlayerInRange && hanoiGoalStack.hasWon && !soundPlayed)
         {
-            Debug.Log("correeeeeeect sofia");
             sound= audio.GetComponent<AudioSource> ();
             sound.Play();
             soundPlayed = true;
@@ -42,13 +48,9 @@ public class PowerGeneratorGlow : MonoBehaviour
          
         if(other.gameObject.layer == 7)
         {
+            Debug.Log("trigger with player");
             isPlayerInRange =true;
-            print("in zone key collider");
-
-     }
-
-            
-        
+        }
     }
 
     private void OnTriggerExit(Collider other){

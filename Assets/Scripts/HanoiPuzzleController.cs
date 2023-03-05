@@ -33,7 +33,7 @@ public class HanoiPuzzleController : MonoBehaviour
     }
     void Update()
     {   
-        bottomZoneDiscAttached = bottomZone.GetComponent<HanoiZoneController>().discAttached;
+        /*bottomZoneDiscAttached = bottomZone.GetComponent<HanoiZoneController>().discAttached;
         middleZoneDiscAttached = middleZone.GetComponent<HanoiZoneController>().discAttached;
         topZoneDiscAttached = topZone.GetComponent<HanoiZoneController>().discAttached;
 
@@ -48,7 +48,7 @@ public class HanoiPuzzleController : MonoBehaviour
         // )
         if( bottomZoneDiscAttached != null && bottomZoneDiscAttached.name == "DiscSmall" )
         {
-            Debug.Log("WIN");
+            
            
             
             if(  !hasPlayed )
@@ -63,7 +63,18 @@ public class HanoiPuzzleController : MonoBehaviour
             }
             
 
-        }
+        }*/
 
+    }
+
+    public void Solve() {
+        Debug.Log("WIN");
+        hasWon = true;
+        zones.SetActive(!zones.activeSelf);
+        key.SetActive(!key.activeSelf);
+        smoke.Play();
+        hasPlayed = true;
+        EmissObj1.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+        EmissObj2.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
     }
 }

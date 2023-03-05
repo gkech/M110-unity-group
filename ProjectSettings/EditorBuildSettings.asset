@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/HanoiScene.unity
     guid: bfd2760635d19f4469605b8acf1f2def
   - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: 347da936763b35c458aaeb75bedd303d
+  - enabled: 1
     path: Assets/vrcs.unity
     guid: a4a861cfe87f37149a27dda2fdc0828b
   - enabled: 1
+    path: Assets/Scenes/FutureScene.unity
+    guid: 5579c4d1a2cf8d349a28f031717cb7d3
+  - enabled: 0
     path: Assets/Oculus/SampleFramework/Usage/StartScene.unity
     guid: 071fba5195bd4b04eab8668985aa1683
   m_configObjects:
