@@ -11,8 +11,8 @@ public class PowerGeneratorGlow : MonoBehaviour
 
     public bool isPlayerInRange = false;
     public bool soundPlayed = false;
-    public GameObject audio ;
-    AudioSource sound;
+    //public GameObject audio ;
+    //AudioSource sound;
 
     
     void Awake()
@@ -30,16 +30,16 @@ public class PowerGeneratorGlow : MonoBehaviour
             Debug.Log("Player in range");
         }
 
-                if( hanoiGoalStack.hasWon) {
+        if( hanoiGoalStack.hasWon) {
             Debug.Log("win stack");
         }
         
-        if( isPlayerInRange && hanoiGoalStack.hasWon && !soundPlayed)
+        /*if( isPlayerInRange && hanoiGoalStack.hasWon && !soundPlayed)
         {
             sound= audio.GetComponent<AudioSource> ();
             sound.Play();
             soundPlayed = true;
-        }
+        }*/
         
         
     }

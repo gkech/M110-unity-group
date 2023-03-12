@@ -9,6 +9,8 @@ public class KeyZoneController : MonoBehaviour
     public GameObject portalGlow;
     bool hasPlayed = false;
 
+    public GameObject room;
+
     public GameObject flashLight;
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,7 @@ public class KeyZoneController : MonoBehaviour
         flashLight.SetActive(true);
 
         yield return new WaitForSeconds(4);
-
+        room.SetActive(false);
         SceneManager.LoadScene("FutureScene");
     
     }

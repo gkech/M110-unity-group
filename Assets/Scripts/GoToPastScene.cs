@@ -15,6 +15,7 @@ public class GoToPastScene : MonoBehaviour
     public GameObject light;
     public Renderer render;
     public Material newMaterial;
+    public GameObject room;
 
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class GoToPastScene : MonoBehaviour
         flashLight.SetActive(true);
 
         yield return new WaitForSeconds(4);
+        room.SetActive(false);
 
         SceneManager.LoadScene("vrcs");
     
